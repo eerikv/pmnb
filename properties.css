@@ -41,7 +41,7 @@
         --shadow-sidebar:   var(--box-shadow-lg);
 
         /* Components */
-        --sidebar-width: 288px;
+        --sidebar-width: 20em;
 
     /* 2. CUSTOM PROPERTIES */
 
