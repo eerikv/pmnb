@@ -1,0 +1,154 @@
+:root {
+    /*  properties.css
+
+        Contents:
+        1. Theme
+            - Fonts
+            - Colors
+            - Box shadow
+            - Components
+        2. Custom properties
+            - Paragraph fonts
+            - Headline fonts
+            - Colors
+            - Box shadow
+
+
+    */
+
+    /* 1. THEME */
+
+        /* Fonts */
+        --t-h1:         var(--headline-900-4xl);
+        --t-h2:         var(--headline-900-2xl);
+        --t-p:          var(--text-400-md);
+        --t-sidebar:    var(--text-600-md);
+        --t-image-alt:  var(--text-400-sm);
+
+        /* Colors */
+        --c-primary:        var(--color-blue-500);
+        --c-primary-hover:  var(--color-blue-600);
+        --c-text-light:     var(--color-white);
+        --c-bg-light:       var(--color-grey-200);
+        --c-bg-light-hover: var(--color-grey-200-5pct);
+        --c-bg:             var(--color-grey-400);
+        --c-bg-dark:        var(--color-grey-800);
+        --c-bg-sidebar:     var(--color-grey-900);
+        --c-text-dark:      var(--color-black);
+
+        /* Box shadow */
+        --shadow-card:      var(--box-shadow-md);
+        --shadow-sidebar:   var(--box-shadow-lg);
+
+        /* Components */
+        --sidebar-width: 288px;
+
+    /* 2. CUSTOM PROPERTIES */
+
+        /* Paragraph fonts */
+
+            /* Regular: 400 */
+            --text-400-xs:  400 12em/150% Nunito Sans, serif;
+            --text-400-sm:  400 14em/150% Nunito Sans, serif;
+            --text-400-md:  400 16em/150% Nunito Sans, serif;
+            --text-400-lg:  400 18em/150% Nunito Sans, serif;
+            --text-400-xl:  400 20em/150% Nunito Sans, serif;
+            --text-400-2xl: 400 24em/150% Nunito Sans, serif;
+            --text-400-3xl: 400 30em/150% Nunito Sans, serif;
+            --text-400-4xl: 400 36em/150% Nunito Sans, serif;
+            --text-400-5xl: 400 48em/150% Nunito Sans, serif;
+            --text-400-6xl: 400 60em/150% Nunito Sans, serif;
+            --text-400-7xl: 400 60em/150% Nunito Sans, serif;
+
+            /* Semibold: 600 */
+            --text-600-xs:  600 12em/150% Nunito Sans, serif;
+            --text-600-sm:  600 14em/150% Nunito Sans, serif;
+            --text-600-md:  600 16em/150% Nunito Sans, serif;
+            --text-600-lg:  600 18em/150% Nunito Sans, serif;
+            --text-600-xl:  600 20em/150% Nunito Sans, serif;
+            --text-600-2xl: 600 24em/150% Nunito Sans, serif;
+            --text-600-3xl: 600 30em/150% Nunito Sans, serif;
+            --text-600-4xl: 600 36em/150% Nunito Sans, serif;
+            --text-600-5xl: 600 48em/150% Nunito Sans, serif;
+            --text-600-6xl: 600 60em/150% Nunito Sans, serif;
+            --text-600-7xl: 600 60em/150% Nunito Sans, serif;
+
+            /* Bold: 700 */
+            --text-700-xs:  700 12em/150% Nunito Sans, serif;
+            --text-700-sm:  700 14em/150% Nunito Sans, serif;
+            --text-700-md:  700 16em/150% Nunito Sans, serif;
+            --text-700-lg:  700 18em/150% Nunito Sans, serif;
+            --text-700-xl:  700 20em/150% Nunito Sans, serif;
+            --text-700-2xl: 700 24em/150% Nunito Sans, serif;
+            --text-700-3xl: 700 30em/150% Nunito Sans, serif;
+            --text-700-4xl: 700 36em/150% Nunito Sans, serif;
+            --text-700-5xl: 700 48em/150% Nunito Sans, serif;
+            --text-700-6xl: 700 60em/150% Nunito Sans, serif;
+            --text-700-7xl: 700 60em/150% Nunito Sans, serif;
+
+        /* Headline fonts */
+
+            /* Regular: 400 */
+            --headline-400-xs:  400 12em/150% Lato, serif;
+            --headline-400-sm:  400 14em/150% Lato, serif;
+            --headline-400-md:  400 16em/150% Lato, serif;
+            --headline-400-lg:  400 18em/150% Lato, serif;
+            --headline-400-xl:  400 20em/150% Lato, serif;
+            --headline-400-2xl: 400 24em/150% Lato, serif;
+            --headline-400-3xl: 400 30em/150% Lato, serif;
+            --headline-400-4xl: 400 36em/150% Lato, serif;
+            --headline-400-5xl: 400 48em/150% Lato, serif;
+            --headline-400-6xl: 400 60em/150% Lato, serif;
+            --headline-400-7xl: 400 60em/150% Lato, serif;
+
+            /* Semibold: 700 */
+            --headline-700-xs:  700 12em/150% Lato, serif;
+            --headline-700-sm:  700 14em/150% Lato, serif;
+            --headline-700-md:  700 16em/150% Lato, serif;
+            --headline-700-lg:  700 18em/150% Lato, serif;
+            --headline-700-xl:  700 20em/150% Lato, serif;
+            --headline-700-2xl: 700 24em/150% Lato, serif;
+            --headline-700-3xl: 700 30em/150% Lato, serif;
+            --headline-700-4xl: 700 36em/150% Lato, serif;
+            --headline-700-5xl: 700 48em/150% Lato, serif;
+            --headline-700-6xl: 700 60em/150% Lato, serif;
+            --headline-700-7xl: 700 60em/150% Lato, serif;
+
+            /* Bold: 900 */
+            --headline-900-xs:  900 12em/150% Lato, serif;
+            --headline-900-sm:  900 14em/150% Lato, serif;
+            --headline-900-md:  900 16em/150% Lato, serif;
+            --headline-900-lg:  900 18em/150% Lato, serif;
+            --headline-900-xl:  900 20em/150% Lato, serif;
+            --headline-900-2xl: 900 24em/150% Lato, serif;
+            --headline-900-3xl: 900 30em/150% Lato, serif;
+            --headline-900-4xl: 900 36em/150% Lato, serif;
+            --headline-900-5xl: 900 48em/150% Lato, serif;
+            --headline-900-6xl: 900 60em/150% Lato, serif;
+            --headline-900-7xl: 900 60em/150% Lato, serif;
+        
+        /* Colors */
+        --color-blue-500:     #5855FE;
+        --color-blue-600:     #5453C2;
+        --color-white:        #FFFFFF;
+        --color-grey-200:     #F6F6FA;
+        --color-grey-200-5pct:  rgba(246, 246, 250, 5);
+        --color-grey-400:     #E4E4E8;
+        --color-grey-600:     #CBCBD2;
+        --color-grey-800:     #86868E;
+        --color-grey-900:     #2C2C2E;
+        --color-black:        #131313;
+        --color-black-15pct:    rgba(19, 19, 19, 15);
+        --color-black-20pct:    rgba(19, 19, 19, 20);
+
+        /* Box shadow */
+        --box-shadow-2xs:   0 0 2 0 var(--color-black-20pct);
+        --box-shadow-xs:    0 1 3 0 var(--color-black-20pct);
+        --box-shadow-sm:    0 1 6 1 var(--color-black-20pct);
+        --box-shadow-md:    0 2 12 1 var(--color-black-15pct);
+        --box-shadow-lg:    0 2 16 1 var(--color-black-15pct);
+        --box-shadow-xl:    0 2 24 1 var(--color-black-15pct);
+        --box-shadow-2xl:   0 2 48 1 var(--color-black-15pct);
+
+
+}
