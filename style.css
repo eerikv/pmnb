@@ -1,3 +1,116 @@
-body {
-    font-size: 1px;
-}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    background-color: #2C2C2E; /* Dark background for the sidebar */
+    color: white;
+    width: 250px; /* Fixed sidebar width */
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    padding: 1rem;
+  }
+  
+  .sidebar-header h1,
+  .sidebar-footer a {
+    color: #5855FE; /* Primary color */
+  }
+  
+  .sidebar-nav ul {
+    list-style: none;
+    padding-left: 0; /* Remove default padding */
+    margin-top: 1rem;
+  }
+  
+  .sidebar-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    display: block;
+  }
+  
+  .sidebar-nav li a:hover,
+  .sidebar-footer a:hover {
+    color: #5453C2; /* Primary color - hover state */
+  }
+  
+  /* Content styles */
+  .content {
+    margin-left: 250px; /* Same as sidebar width */
+    padding: 2rem;
+    background-color: #F6F6FA; /* Light background for content */
+  }
+  
+  .content header h2 {
+    color: #5855FE; /* Primary color */
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .content header p {
+    color: #131313; /* Dark text color */
+    margin-bottom: 2rem;
+  }
+  
+  /* Topics styles */
+  .topics h3 {
+    font-size: 1.5rem;
+    color: #5855FE; /* Primary color */
+    margin-bottom: 1rem;
+  }
+  
+  .topic-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .topic-card {
+    flex: 1 1 200px; /* Flex basis of 200px */
+    background-color: #FFFFFF; /* White background for cards */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    overflow: hidden; /* Ensures the content fits within the borders */
+    text-align: center; /* Center text inside the card */
+  }
+  
+  .topic-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .topic-card span {
+    display: block;
+    padding: 0.5rem 0;
+  }
+  
+  /* Footer styles */
+  .sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Make the main content responsive */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .content {
+      margin-left: 0;
+    }
+  
+    .topic-card {
+      flex-basis: 100%; /* Full width on smaller screens */
+    }
+  }
+  
