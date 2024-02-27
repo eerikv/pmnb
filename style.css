@@ -1,3 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-size: 1px;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--c-bg-light);
+  color: var(--c-text-dark);
+}
+
+/* sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100%;
+  background-color: var(--c-bg-sidebar);
+  color: var(--c-text-light);
+  box-shadow: var(--shadow-sidebar);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-header,
+.sidebar-nav,
+.sidebar-footer {
+  font-size: var(--text-600-md);
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 0;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a:focus {
+  background-color: var(--c-bg-dark);
+}
+
+/* Main content */
+.content {
+  margin-left: var(--sidebar-width);
+  padding: 2em;
+}
+
+.content-header {
+  font-size: var(--headline-900-2xl);
+}
+
+.content-description {
+  font-size: var(--text-400-md);
+}
+
+/* Grid, topic cards */
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1em;
+}
+
+.topic-card {
+  background-color: var(--c-bg);
+  box-shadow: var(--shadow-card);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+}
+
+.topic-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.topic-title {
+  font-size: var(--text-400-md);
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .topic-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+/* Further responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
 }
