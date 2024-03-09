@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PM Notebook - Template</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito+Sans:wght@400;600;700&display=swap"
+    />
+    <!-- Import main style -->
+    <link rel="stylesheet" href="template.css" type="text/css" />
+
+    <!-- Import custom properties style -->
+    <link rel="stylesheet" href="properties.css" type="text/css" />
+
+    <!-- Import Javascript -->
+    <script type="text/javascript" src="script.js"></script>
+
+    <!-- Import Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style></style>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>PM Notebook</h1>
+        <p>Group 8</p>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li>
+            <a href="index.html" class="sidebar-button active"
+              ><span>Home</span></a
+            >
+          </li>
+          <li class="sidebar-button dropdown">
+            <a
+              href="#scrumSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="sidebar-link"
+              ><span>Scrum</span></a
+            >
+            <ul class="collapse" id="scrumSubmenu">
+              <li>
+                <a href="#" class="dropdown-item">Introduction to Scrum</a>
+              </li>
+              <li><a href="#" class="dropdown-item">Scrum Roles</a></li>
+              <li><a href="#" class="dropdown-item">Scrum Events</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="agile.html" class="sidebar-button"><span>Agile</span></a>
+          </li>
+          <li>
+            <a href="lean.html" class="sidebar-button"><span>Lean</span></a>
+          </li>
+          <li>
+            <a href="waterfall.html" class="sidebar-button"
+              ><span>Waterfall</span></a
+            >
+          </li>
+          <li class="sidebar-button dropdown">
+            <a
+              href="#ipmaSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="sidebar-link"
+              ><span>IPMA standards</span></a
+            >
+            <ul class="collapse" id="ipmaSubmenu">
+              <li><a href="#" class="dropdown-item">IPMA Level A</a></li>
+              <li><a href="#" class="dropdown-item">IPMA Level B</a></li>
+              <li><a href="#" class="dropdown-item">IPMA Level C</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="risk_management.html" class="sidebar-button"
+              ><span>Risk management and risk analysis</span></a
+            >
+          </li>
+          <li>
+            <a href="quality_management.html" class="sidebar-button"
+              ><span>Quality management</span></a
+            >
+          </li>
+          <!-- More topics -->
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        <a
+          href="https://github.com/eerikv/pmnotebook_group8"
+          target="_blank"
+          class="sidebar-button github-link"
+          ><span>GitHub</span></a
+        >
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="content-header">
+        <h2>Main topic title</h2>
+        <img src="src/images/card-placeholder.png" alt="Main topic image" />
+        <p>Main description text goes here.</p>
+      </section>
+      <article class="chapter">
+        <h3>Chapter title</h3>
+        <img src="src/images/card-placeholder.png" alt="Chapter image" />
+        <p>Chapter text goes here.</p>
+        <img src="src/images/card-placeholder.png" alt="The Scrum Framework" />
+      </article>
+      <!-- Additional chapterss-->
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+      document
+        .querySelectorAll(".sidebar-button.dropdown > a")
+        .forEach((dropdownLink) => {
+          dropdownLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            let dropdown = this.nextElementSibling;
+            dropdown.classList.toggle("show");
+          });
+        });
+    </script>
+  </body>
+</html>
