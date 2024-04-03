@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito+Sans:wght@400;600;700&display=swap');
 
+@import url('./sidebar.css');
+
 /* Custom properties */
 :root {
     --font-size-h1: 2.5rem; /* Adjust to match the design */
@@ -45,90 +47,6 @@ body {
     line-height: 1.6;
 }
 
-/* sidebar */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: var(--sidebar-width);
-    height: 100%;
-    background-color: var(--c-bg-sidebar);
-    color: var(--c-text-light);
-    box-shadow: var(--shadow-sidebar);
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.sidebar-header,
-.sidebar-nav,
-.sidebar-footer {
-  font: var(--text-600-md);
-}
-
-.sidebar-header {
-    padding: 0 1em 2em 1em;
-    font: var(--t-sidebar-subheader);
-}
-
-.sidebar-header * {
-    display: block;
-}
-
-.sidebar-header > span:first-child {
-    font: var(--t-sidebar-header);
-}
-
-.sidebar-header span:not(:first-child) {
-    font: var(--t-sidebar-subheader);
-    color: var(--c-text-darkgrey);
-}
-
-.sidebar-nav {
-    height: -webkit-fill-available;
-}
-
-.sidebar-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar-nav > ul > li:first-child {
-    padding-bottom: 2em;
-}
-
-.sidebar-button {
-    display: flex;
-    min-height: 3.5em;
-    align-items: center;
-    color: var(--c-text-darkgrey);
-    padding: 0.5em 1em;
-    margin-bottom: 4px;
-    border-radius: var(--border-radius-sm);
-    transition-duration: 0.2s;
-}
-
-.sidebar-button i {
-    min-width: 16px;
-    text-align: center;
-}
-
-.sidebar-button:hover,
-.sidebar-button:focus,
-.sidebar-button.active {
-    background-color: var(--c-bg-light-hover);
-    color: var(--c-text-lightgrey);
-}
-
-.sidebar-button span {
-    flex: 1;
-}
-
-.sidebar-button.icon-left i:first-child {
-    padding-right: 1em;
-}
-
 /* Main content styles */
 .main-content {
     margin-left: var(--sidebar-width);
@@ -138,6 +56,7 @@ body {
 
 .content-header {
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .content-header h2 {
@@ -208,7 +127,7 @@ body {
     }
 }
 
-.sidebar-button.dropdown > a {
+/*.sidebar-button.dropdown > a {
     cursor: pointer; 
   }
   
@@ -226,5 +145,4 @@ body {
   
   .sidebar-button.dropdown > a:after {
     content: '';
-  }
-  
+  }*/
