@@ -144,7 +144,7 @@
         display: none;
         position: absolute;
         background-color: var(--c-bg-sidebar);
-        height: calc(100vh - 48px);
+        height: calc(100dvh - 48px);
         width: 100vw;
         top: 48px;
     }
