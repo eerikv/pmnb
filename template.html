@@ -147,20 +147,8 @@
           
         </div>
       </div>
-      <!-- Additional chapterss-->
     </main>
 
     <script src="script.js"></script>
-    <script>
-      document
-        .querySelectorAll(".sidebar-button.dropdown > a")
-        .forEach((dropdownLink) => {
-          dropdownLink.addEventListener("click", function (event) {
-            event.preventDefault();
-            let dropdown = this.nextElementSibling;
-            dropdown.classList.toggle("show");
-          });
-        });
-    </script>
   </body>
 </html>
