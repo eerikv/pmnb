@@ -22,7 +22,9 @@
         --t-h1:                 var(--headline-700-4xl);
         --t-h2:                 var(--headline-900-2xl);
         --t-subheader:          var(--text-600-md);
+        --t-mobile-h2:          var(--headline-900-md);
         --t-p:                  var(--text-400-md);
+        --t-ol:                 var(--text-400-sm);
         --t-sidebar-header:     var(--headline-900-2xl);
         --t-sidebar-subheader:  var(--text-600-md);
         --t-sidebar:            var(--text-600-md);
