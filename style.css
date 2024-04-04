@@ -16,6 +16,10 @@ a:active {
     text-decoration: none;
 }
 
+a {
+    color: var(--c-primary);
+}
+
 body {
     min-height: 100dvh;
     margin: 0;
