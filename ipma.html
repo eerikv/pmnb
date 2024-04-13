@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PM Notebook - Template</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito+Sans:wght@400;600;700&display=swap"
+    />
+    <!-- Import main style -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!-- Import custom properties style -->
+    <link rel="stylesheet" href="properties.css" type="text/css" />
+
+    <!-- Import Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/e5efe13206.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Import Javascript -->
+    <script type="text/javascript" src="script.js"></script>
+
+    <!-- Import Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style></style>
+  </head>
+  <body>
+    <aside id="sidebar">
+        <div class="sidebar-mobile-header">
+          <span>IPMA</span><a id="sidebar-mobile-menu-button"><i id="sidebar-mobile-menu-button-icon" class="fa fa-bars"></i></a>
+        </div>
+        <div class="sidebar-header">
+          <span>PM Notebook</span>
+          <span>Group 8</span>
+        </div>
+        <nav id="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html" class="sidebar-button"
+                ><span>Home</span><i class="fa fa-house"></i
+              ></a>
+            </li>
+            <li>
+              <a href="scrum.html" class="sidebar-button"
+                ><span>Scrum</span><i class="fa fa-chevron-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="agile.html" class="sidebar-button"
+                ><span>Agile</span><i class="fa fa-chevron-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="lean.html" class="sidebar-button"
+                ><span>Lean</span><i class="fa fa-chevron-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="waterfall.html" class="sidebar-button"
+                ><span>Waterfall</span><i class="fa fa-chevron-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="ipma.html" class="sidebar-button"
+                ><span>IPMA standards</span><i class="fa fa-chevron-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="risk_management.html" class="sidebar-button"
+                ><span>Risk management and risk analysis</span
+                ><i class="fa fa-chevron-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="quality_management.html" class="sidebar-button"
+                ><span>Quality management</span><i class="fa fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <div id="sidebar-footer">
+          <a href="template.html" class="sidebar-button active"
+            ><span>Page template</span><i class="fa fa-chevron-right"></i
+          ></a>
+          <a
+            href="https://github.com/eerikv/pmnotebook_group8"
+            target="_blank"
+            class="sidebar-button icon-left"
+            ><i class="fa-brands fa-github"></i><span>GitHub</span
+            ><i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+    </aside>
+
+    <main id="content-container" class="article">
+        <!-- The header of the article with the background image and title -->
+      <section class="article-header" style="background-image: url(src/images/card-placeholder-wide.png)">
+        <h1>IPMA</h1>
+      </section>
+      <div class="content article">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        <!-- A single chapter, every subheader (title) and it's related content should belong into their own chapter container -->
+        <div class="chapter">
+
+          <!-- Title of a chapter -->
+          <h2>What is the IPMA certification? </h2>
+
+          <!-- Full width text -->
+          <p>IPMA® is a global leader in project management standards and certifications, with its Competence Baseline (IPMA ICB®) 
+            as a comprehensive framework for various project management roles. 
+            IPMA®’s Four-Level Certification System is unique worldwide and recognised for its quality to elevating professional standards. <br>
+            The IPMA 4-L-C System operates with three domains: project, programme and portfolio management; and four levels of competence – Levels A, B, C and D. 
+            The IPMA level definitions are constructed against the following core criteria:<br>
+            
+             <!-- Unordered list -->
+            <ul>
+              <li>Level A is constructed in terms of the leadership of others in very complex projects (programmes or portfolios) throughout the life cycle (where applicable) at a strategic level.</li>
+              <li>Level B is constructed in terms of the leadership of others in projects (programmes or portfolios) and includes complexity throughout the life cycle (where applicable).</li>
+              <li>Level C is constructed in terms of the management of others in projects of moderate complexity throughout the life cycle through the application of knowledge/theory across all relevant competences.</li>
+              <li>Level D is constructed in terms of knowledge across all relevant competences only.</li>
+            </ul>
+          </p>
+          
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
