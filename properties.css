@@ -21,6 +21,7 @@
         /* Fonts */
         --t-h1:                 var(--headline-700-4xl);
         --t-h2:                 var(--headline-900-2xl);
+        --t-h3:                 var(--headline-700-xl);
         --t-subheader:          var(--text-600-md);
         --t-mobile-h2:          var(--headline-900-md);
         --t-p:                  var(--text-400-md);
